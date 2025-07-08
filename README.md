@@ -10,7 +10,7 @@
   <a href="mailto:ramiroalejandrolacci19@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
-  <a href="www.linkedin.com/in/ramiro-lacci19" target="_blank">
+  <a href="//www.linkedin.com/in/ramiro-lacci/" target="_blank">
     <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="https://wa.link/a1bh6y" target="_blank">
