@@ -72,17 +72,6 @@ I am a FullStack developer. HTML, CSS, Javascript, Python and PHP are the progra
   <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white">
 </span>
 
-## 📫 Contacts
-
-<span>
-  <a href="mailto:ramiroalejandrolacci19@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-  </a>
-  <a href="https://wa.link/a1bh6y" target="_blank">
-    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-  </a>
-</span>
-
 <h2> 📊 Github stats:</h2>
 
 <div align="center">
@@ -92,6 +81,17 @@ I am a FullStack developer. HTML, CSS, Javascript, Python and PHP are the progra
   <br><br>
   [![](https://github-readme-streak-stats.herokuapp.com/?user=ramirolacci&theme=material-palenight)](https://github.com/ramirolacci)
 </div>
+
+## 📫 Contacts
+
+<p align="center">
+  <a href="mailto:ramiroalejandrolacci19@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+  </a>
+  <a href="https://wa.link/a1bh6y" target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+  </a>
+</p>
 
 ---
 
