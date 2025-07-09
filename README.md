@@ -7,14 +7,8 @@
 </div>
 
 <p align="center">
-  <a href="mailto:ramiroalejandrolacci19@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-  </a>
   <a href="//www.linkedin.com/in/ramiro-lacci/" target="_blank">
     <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://wa.link/a1bh6y" target="_blank">
-    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>
   <a href="https://github.com/ramirolacci" target="_blank">
     <img alt="GitHub followers" src="https://img.shields.io/github/followers/ramirolacci?style=social" />
@@ -76,5 +70,29 @@ I am a FullStack developer. HTML, CSS, Javascript, Python and PHP are the progra
   <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white">
   <img src="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white">
   <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white">
-
 </span>
+
+## 📫 Contacts
+
+<span>
+  <a href="mailto:ramiroalejandrolacci19@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+  </a>
+  <a href="https://wa.link/a1bh6y" target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+  </a>
+</span>
+
+<h2> 📊 Github stats:</h2>
+
+<div align="center">
+  
+  [![](https://github-readme-stats.vercel.app/api?username=ramirolacci&show_icons=true&theme=tokyonight&hide_border=true&locale=en)](https://github.com/ramirolacci)
+  [![](https://github-readme-streak-stats.herokuapp.com/?user=ramirolacci&theme=material-palenight)](https://github.com/ramirolacci)
+</div>
+
+---
+
+<p align="center">
+  <em>Thanks for the space, contact me and let's build solutions together that really make a difference! 💫</em>
+</p>
