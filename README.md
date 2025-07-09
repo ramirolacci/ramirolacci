@@ -32,5 +32,5 @@ I am a FullStack developer. HTML, CSS, Javascript, Python and PHP are the progra
   - React js
 - 🌐 I’m looking forward to collaborate on open source projects.
 - ✔ Ask me about anything, I am happy to help!<br>
-- Outside tech, 📖 I love to read novels, 🖌️ do painting and skecthing, 🎵 listen to music, and 🌴 explore nature outdoors.
+- Outside of technology, 💪🏻 I love going to the gym, 🎮 playing video games, 🎵 listening to music and 📖 reading financial literacy books.
 - 📫 Reach out to me at: <a href="ramiroalejandrolacci19@gmail.com">ramiroalejandrolacci19@gmail.com</a>
