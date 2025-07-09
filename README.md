@@ -87,7 +87,9 @@ I am a FullStack developer. HTML, CSS, Javascript, Python and PHP are the progra
 
 <div align="center">
   
-  [![](https://github-readme-stats.vercel.app/api?username=ramirolacci&show_icons=true&theme=tokyonight&hide_border=true&locale=en)](https://github.com/ramirolacci)
+  ![Ramiro Lacci's github stats](https://github-readme-stats.vercel.app/api?username=ramirolacci&show_icons=true&theme=tokyonight)
+  ![Ramiro Lacci's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ramirolacci&theme=tokyonight&layout=compact)
+  <br><br>
   [![](https://github-readme-streak-stats.herokuapp.com/?user=ramirolacci&theme=material-palenight)](https://github.com/ramirolacci)
 </div>
 
