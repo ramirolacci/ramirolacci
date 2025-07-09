@@ -24,3 +24,13 @@
 ## <picture><img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width = 50px></picture> About Me
 
 <img align="right" alt="GIF" height="160px" src="https://media.giphy.com/media/Ah3zHH7hvsSB2/giphy.gif" />
+
+I am a FullStack developer. HTML, CSS, Javascript, Python and PHP are the programming languages I am good at. I love to learn and build something new, productive, innovative and creative.
+* **I am interested in web design, web application development and digital marketing.**
+- 🌱 I’m currently learning ...
+  - Java
+  - React js
+- 🌐 I’m looking forward to collaborate on open source projects.
+- ✔ Ask me about anything, I am happy to help!<br>
+- Outside tech, 📖 I love to read novels, 🖌️ do painting and skecthing, 🎵 listen to music, and 🌴 explore nature outdoors.
+- 📫 Reach out to me at: <a href="ramiroalejandrolacci19@gmail.com">ramiroalejandrolacci19@gmail.com</a>
