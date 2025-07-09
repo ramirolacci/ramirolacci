@@ -7,6 +7,9 @@
 </div>
 
 <p align="center">
+  <a href="https://github.com/ramirolacci" target="_blank">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/ramirolacci?style=social" />
+  </a>
   <a href="mailto:ramiroalejandrolacci19@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
@@ -19,3 +22,5 @@
 </p>
 
 ## <picture><img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width = 50px></picture> About Me
+
+<img align="right" alt="GIF" height="160px" src="https://media.giphy.com/media/Ah3zHH7hvsSB2/giphy.gif" />
