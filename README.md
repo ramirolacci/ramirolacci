@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="https://wa.link/a1bh6y" target="_blank">
-    <img src="https://img.shields.io/badge/-WhatsApp-E4405?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>
   <a href="https://github.com/ramirolacci" target="_blank">
     <img alt="GitHub followers" src="https://img.shields.io/github/followers/ramirolacci?style=social" />
@@ -34,3 +34,5 @@ I am a FullStack developer. HTML, CSS, Javascript, Python and PHP are the progra
 - ✔ Ask me about anything, I am happy to help!<br>
 - Outside of technology, 💪🏻 I love going to the gym, 🎮 playing video games, 🎵 listening to music and 📖 reading financial literacy books.
 - 📫 Reach out to me at: <a href="ramiroalejandrolacci19@gmail.com">ramiroalejandrolacci19@gmail.com</a>
+
+## 🚀 Technologies and Tools
