@@ -23,7 +23,7 @@ I am a FullStack developer. HTML, CSS, Javascript, Python and PHP are the progra
 * **I am interested in web design, web application development and digital marketing.**
 - 🌱 I’m currently learning ...
   - Java
-  - React js
+  - .Net
 - 🌐 I’m looking forward to collaborate on open source projects.
 - ✔ Ask me about anything, I am happy to help!<br>
 - Outside of technology, 💪🏻 I love going to the gym, 🎮 playing video games, 🎵 listening to music and 📖 reading financial literacy books.
