@@ -7,9 +7,6 @@
 </div>
 
 <p align="center">
-  <a href="https://github.com/ramirolacci" target="_blank">
-    <img alt="GitHub followers" src="https://img.shields.io/github/followers/ramirolacci?style=social" />
-  </a>
   <a href="mailto:ramiroalejandrolacci19@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
@@ -18,6 +15,9 @@
   </a>
   <a href="https://wa.link/a1bh6y" target="_blank">
     <img src="https://img.shields.io/badge/-WhatsApp-E4405?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
+  </a>
+  <a href="https://github.com/ramirolacci" target="_blank">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/ramirolacci?style=social" />
   </a>
 </p>
 
