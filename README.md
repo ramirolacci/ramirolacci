@@ -2,6 +2,10 @@
 
 <br>
 
+<p align="center">
+  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com/?lines=Software%20Web;AI%20Developer;FrontEnd%20Designer;UI/%UX%20Designer;Software%20Tester;ACfont=Fira%20Code&center=true&width=440&height=45"></a>
+</p>
+
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=FullStack%20Developer&fontSize=70&animation=fadeIn" alt="Banner FullStack Developer" />
 </div>
