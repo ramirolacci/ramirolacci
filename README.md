@@ -87,8 +87,8 @@ I am a FullStack developer. HTML, CSS, Javascript, Python and PHP are the progra
 
 <div align="center">
 
-  [![](https://github-readme-streak-stats.herokuapp.com/?user=ramirolacci&theme=material-palenight)](https://github.com/ramirolacci)
-  <img src="https://github-readme-stats.vercel.app/api?username=Waveframestudio&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Studio Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ramirolacci&theme=tokyonight&hide_border=true" alt="ramirolacci Activity" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ramirolacci&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Studio Stats" />
 </div>
 
 ## 📫 Contacts
