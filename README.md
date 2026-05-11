@@ -86,11 +86,9 @@ I am a FullStack developer. HTML, CSS, Javascript, Python and PHP are the progra
 <h2> 📊 Github stats:</h2>
 
 <div align="center">
-  <table border="0">
       <td>
         <img src="https://github-readme-streak-stats.herokuapp.com/?user=ramirolacci&theme=tokyonight&hide_border=true" alt="Ramiro Lacci Activity" />
       </td>
-  </table>
 </div>
 
 ## 📫 Contacts
