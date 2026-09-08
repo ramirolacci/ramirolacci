@@ -17,7 +17,7 @@
 
 ## <picture><img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width = 50px></picture> About Me
 
-<img align="right" alt="GIF" height="160px" src="https://media.giphy.com/media/Ah3zHH7hvsSB2/giphy.gif" />
+
 
 I am a **Full-Stack Developer** passionate about creating high-impact digital experiences, modern interactive interfaces (React, TypeScript, 3D, Canvas/GSAP animations), and scalable web systems. I am the founder of **WaveFrame Studio**, where I develop digital solutions for brands and companies.
 - 🛠️ **Specialty**: React, TypeScript, Node.js, Tailwind CSS, Supabase, and 3D rendering.
