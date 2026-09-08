@@ -1,109 +1,54 @@
-<h1 align="center">Hi , I'm Ramiro Lacci <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
-
-<br>
-
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=FullStack%20Developer&fontSize=70&animation=fadeIn" alt="Banner FullStack Developer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,1,10&height=220&section=header&text=Ramiro%20Lacci&fontSize=70&animation=fadeIn&fontAlignY=38&desc=Fullstack%20Developer%20%7C%20Web%20%26%20Interactive%20Apps&descFontSize=22&descAlignY=62" width="100%" />
+
+  <br />
+
+  <a href="https://waveframe.com.ar/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_Portfolio_/_Agency-WaveFrame-00C7B7?style=for-the-badge&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/ramiro-lacci" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Ramiro_Lacci-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:ramiroalejandrolacci19@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
 </div>
 
-<p align="center">
-  <a href="//www.linkedin.com/in/ramiro-lacci/" target="_blank">
-    <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/ramirolacci" target="_blank">
-    <img alt="GitHub followers" src="https://img.shields.io/github/followers/ramirolacci?style=social" />
-  </a>
-</p>
+<br />
 
-## <picture><img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width = 50px></picture> About Me
+## 👨‍💻 Sobre Mí
 
-<img align="right" alt="GIF" height="160px" src="https://media.giphy.com/media/Ah3zHH7hvsSB2/giphy.gif" />
+Soy **Desarrollador Fullstack** apasionado por crear experiencias digitales de alto impacto, interfaces interactivas modernas (React, TypeScript, 3D, animaciones Canvas/GSAP) y sistemas web escalables. Fundador de **WaveFrame Studio**, donde desarrollo soluciones digitales para marcas y empresas.
 
-I am a FullStack developer. HTML, CSS, Javascript, Python and PHP are the programming languages I am good at. I love to learn and build something new, productive, innovative and creative.
-* **I am interested in web design, web application development and digital marketing.**
-- 🌱 I’m currently learning ...
-  - Java
-  - .Net
-- 🌐 I’m looking forward to collaborate on open source projects.
-- ✔ Ask me about anything, I am happy to help!<br>
-- Outside of technology, 💪🏻 I love going to the gym, 🎮 playing video games, 🎵 listening to music and 📖 reading financial literacy books.
-- 📫 Reach out to me at: <a href="ramiroalejandrolacci19@gmail.com">ramiroalejandrolacci19@gmail.com</a>
-
-## 🚀 Technologies and Tools
-
-<h4> Languages </h4>
-<span> 
-  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
-  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
-  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
-  <img src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white">
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
-  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
-</span>
-
-<h4> Frameworks </h4>
-<span>
-  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
-  <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white">
-  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
-  <img src="https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white">
-  <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white">
-</span>
-
-<h4> Databases </h4>
-<span>
-  <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white">
-  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white">
-</span>
-
-<h4> IDE </h4>
-<span>
-  <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white">
-  <img src="https://custom-icon-badges.demolab.com/badge/Cursor-000000.svg?logo=cursor-ai-white&style=for-the-badge">
-  <img src="https://img.shields.io/badge/Replit-DD1200?style=for-the-badge&logo=Replit&logoColor=white">
-</span>
-
-<h4> Hostings </h4>
-<span>
-  <img src="https://img.shields.io/badge/hostinger-%23673DE6.svg?style=for-the-badge&logo=hostinger&logoColor=white">
-  <img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7">
-  <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white">
-</span>
-
-<h4> Other Tools and Technologies </h4>
-<span>
-  <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
-  <img src="https://img.shields.io/badge/perplexity-000000?style=for-the-badge&logo=perplexity&logoColor=088F8F">
-  <img src="https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6">
-  <img src="https://img.shields.io/badge/n8n-222222?style=for-the-badge&logo=n8n&logoColor=orange">
-  <img src="https://img.shields.io/badge/Tripo-8884FF?style=for-the-badge&logoColor=white">
-  <img src="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white">
-  <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white">
-</span>
-
-<h2> 📊 Github stats:</h2>
-
-<div align="center">
-      <td>
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=ramirolacci&theme=tokyonight&hide_border=true" alt="Ramiro Lacci Activity" />
-      </td>
-</div>
-
-## 📫 Contacts
-
-<p align="center">
-  <a href="mailto:ramiroalejandrolacci19@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-  </a>
-  <a href="https://wa.link/a1bh6y" target="_blank">
-    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-  </a>
-</p>
+- 🛠️ **Especialidad**: React, TypeScript, Node.js, Tailwind CSS, Supabase & Renderizado 3D.
+- 🚀 **Proyectos destacados**: Micrositios promocionales (Mi Gusto x Flamin' Hot), plataformas de juegos táctiles interactivos y sistemas de gestión empresarial.
+- 📚 **Aprendiendo actualmente**: Java, .NET & Arquitectura de Software Avanzada.
 
 ---
 
-<p align="center">
-  <em>Thanks for the space, contact me and let's build solutions together that really make a difference! 💫</em>
-</p>
+## 🛠️ Tecnologías & Herramientas
+
+<div align="center">
+
+| Categoría | Tecnologías |
+| :--- | :--- |
+| **Frontend & 3D** | <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/> <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/> <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white"/> <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/> |
+| **Backend & BD** | <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/> <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"/> <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"/> |
+| **Herramientas** | <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"/> <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"/> <img src="https://img.shields.io/badge/n8n-222222?style=for-the-badge&logo=n8n&logoColor=orange"/> |
+
+</div>
+
+---
+
+## 📊 Estadísticas de GitHub
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ramirolacci&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ramirolacci&layout=compact&theme=tokyonight&hide=html,css" />
+</div>
+
+<br />
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ramirolacci&theme=tokyonight&hide_border=true" />
+</div>
