@@ -20,13 +20,9 @@
 <img align="right" alt="GIF" height="160px" src="https://media.giphy.com/media/Ah3zHH7hvsSB2/giphy.gif" />
 
 I am a **Full-Stack Developer** passionate about creating high-impact digital experiences, modern interactive interfaces (React, TypeScript, 3D, Canvas/GSAP animations), and scalable web systems. I am the founder of **WaveFrame Studio**, where I develop digital solutions for brands and companies.
-- 🌱 I’m currently learning ...
-  - Java
-  - .Net
-- 🌐 I’m looking forward to collaborate on open source projects.
-- ✔ Ask me about anything, I am happy to help!<br>
-- Outside of technology, 💪🏻 I love going to the gym, 🎮 playing video games, 🎵 listening to music and 📖 reading financial literacy books.
-- 📫 Reach out to me at: <a href="ramiroalejandrolacci19@gmail.com">ramiroalejandrolacci19@gmail.com</a>
+- 🛠️ **Specialty**: React, TypeScript, Node.js, Tailwind CSS, Supabase, and 3D rendering.
+- 🚀 **Featured Projects**: Promotional microsites (Mi Gusto x Flamin' Hot), interactive touchscreen gaming platforms, and business management systems.
+- 📚 **Currently Learning**: Java, .NET, and Advanced Software Architecture.
 
 ## 🚀 Technologies and Tools
 
