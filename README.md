@@ -19,8 +19,7 @@
 
 <img align="right" alt="GIF" height="160px" src="https://media.giphy.com/media/Ah3zHH7hvsSB2/giphy.gif" />
 
-I am a FullStack developer. HTML, CSS, Javascript, Python and PHP are the programming languages I am good at. I love to learn and build something new, productive, innovative and creative.
-* **I am interested in web design, web application development and digital marketing.**
+I am a **Full-Stack Developer** passionate about creating high-impact digital experiences, modern interactive interfaces (React, TypeScript, 3D, Canvas/GSAP animations), and scalable web systems. I am the founder of **WaveFrame Studio**, where I develop digital solutions for brands and companies.
 - 🌱 I’m currently learning ...
   - Java
   - .Net
