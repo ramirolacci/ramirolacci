@@ -108,21 +108,48 @@ def make_logos() -> dict[str, Image.Image]:
     d.line([(225, 72), (174, 328)], fill="black", width=stroke)
     logos["code"] = code
 
-    # Stellar-inspired four-point star with a small connected node network.
-    stellar = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    d = ImageDraw.Draw(stellar)
-    star: list[tuple[float, float]] = []
-    for i in range(16):
-        a = -math.pi / 2 + i * math.pi / 8
-        radius = 137 if i % 4 == 0 else (45 if i % 2 == 0 else 25)
-        star.append((200 + math.cos(a) * radius, 200 + math.sin(a) * radius))
-    d.polygon(star, fill="black")
-    nodes = [(82, 112), (322, 106), (326, 300), (88, 316)]
-    for a, b in zip(nodes, nodes[1:] + nodes[:1]):
-        d.line([a, b], fill="black", width=12)
-    for x, y in nodes:
-        d.ellipse((x - 19, y - 19, x + 19, y + 19), fill="black")
-    logos["stellar"] = stellar
+    # React atom mark: center nucleus and 3 orbital rings.
+    scale = 4
+    supersize = size * scale
+    react_hi = Image.new("RGBA", (supersize, supersize), (0, 0, 0, 0))
+    c_pt = (supersize // 2, supersize // 2)
+    a_rad = 155 * scale
+    b_rad = 58 * scale
+    stroke_w = 26 * scale
+
+    for angle_deg in [0, 60, 120]:
+        rad = math.radians(angle_deg)
+        cos_a, sin_a = math.cos(rad), math.sin(rad)
+        num_pts = 720
+        outer_pts: list[tuple[float, float]] = []
+        inner_pts: list[tuple[float, float]] = []
+        for t in range(num_pts):
+            th = t * 2 * math.pi / num_pts
+            x_out = (a_rad + stroke_w / 2) * math.cos(th)
+            y_out = (b_rad + stroke_w / 2) * math.sin(th)
+            xo = c_pt[0] + x_out * cos_a - y_out * sin_a
+            yo = c_pt[1] + x_out * sin_a + y_out * cos_a
+            outer_pts.append((xo, yo))
+
+            x_in = max(1.0, a_rad - stroke_w / 2) * math.cos(th)
+            y_in = max(1.0, b_rad - stroke_w / 2) * math.sin(th)
+            xi = c_pt[0] + x_in * cos_a - y_in * sin_a
+            yi = c_pt[1] + x_in * sin_a + y_in * cos_a
+            inner_pts.append((xi, yi))
+
+        temp = Image.new("L", (supersize, supersize), 0)
+        dt = ImageDraw.Draw(temp)
+        dt.polygon(outer_pts, fill=255)
+        dt.polygon(inner_pts, fill=0)
+
+        ring_rgba = Image.new("RGBA", (supersize, supersize), (0, 0, 0, 255))
+        react_hi.paste(ring_rgba, (0, 0), temp)
+
+    dr = ImageDraw.Draw(react_hi)
+    r_nuc = 34 * scale
+    dr.ellipse((c_pt[0] - r_nuc, c_pt[1] - r_nuc, c_pt[0] + r_nuc, c_pt[1] + r_nuc), fill=(0, 0, 0, 255))
+    react = react_hi.resize((size, size), Image.Resampling.LANCZOS)
+    logos["react"] = react
 
     for name, image in logos.items():
         image.save(LOGOS / f"{name}.png", optimize=True)
@@ -283,7 +310,7 @@ def render_svg(
     source = portrait[rng.choice(len(portrait), n, replace=False)]
     rust = transport(source, logo_points["rust"][:n])
     code = transport(rust, logo_points["code"][:n])
-    stellar = transport(code, logo_points["stellar"][:n])
+    react = transport(code, logo_points["react"][:n])
 
     # Explicit uneven phase boundaries: 3.0 portrait, 2.0 per logo,
     # and four 1.3 transitions = 14.2 seconds.
@@ -291,7 +318,7 @@ def render_svg(
     key_times = ";".join(num(v / LOOP_SECONDS) for v in times)
     # Returning each traveller to its exact starting portrait coordinate keeps
     # the repeat boundary seamless. All logo-to-logo morphs use optimal transport.
-    frames = [source, source, rust, rust, code, code, stellar, stellar, source]
+    frames = [source, source, rust, rust, code, code, react, react, source]
     opacity_values = "0;0;1;1;1;1;1;1;0"
 
     parts: list[str] = [
@@ -300,7 +327,7 @@ def render_svg(
         'aria-labelledby="title desc">',
         "<title id=\"title\">Ramiro's live system profile</title>",
         '<desc id="desc">Animated terminal profile with a dithered portrait and '
-        "Rust, code, and Stellar silhouettes.</desc>",
+        "Rust, code, and React silhouettes.</desc>",
         "<defs>",
         '<filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">'
         f'<feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="{t["shadow"]}" '
