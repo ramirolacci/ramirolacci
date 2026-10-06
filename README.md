@@ -37,7 +37,7 @@
 
 ---
 
-## { About Me }
+## 🧑🏻‍💻 { About Me }
 
 Hi, I'm **Ramiro Lacci**, Full-Stack Developer & Digital Solutions Specialist, based in **Buenos Aires, Argentina** 🇦🇷.
 
@@ -55,7 +55,7 @@ I am the founder of **[WaveFrame Studio](https://waveframe.com.ar/)**, where I c
 
 <div align="center">
 
-## 🚀 Technologies and Tools
+## 🚀 { Technologies and Tools }
 
 <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,nodejs,tailwind,python,django,ruby,rails,postgresql,supabase,html,css,git,github&perline=8" alt="tech stack">
 
@@ -65,7 +65,7 @@ I am the founder of **[WaveFrame Studio](https://waveframe.com.ar/)**, where I c
 
 <div align="center">
 
-## 🎯 Skill & Stack Radar
+## 🎯 { Skill & Stack Radar }
 
 <table>
 <tr>
@@ -96,7 +96,7 @@ I am the founder of **[WaveFrame Studio](https://waveframe.com.ar/)**, where I c
 
 <div align="center">
 
-## 📊 Github Stats & Activity
+## 📊 { Github Stats & Activity }
 
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/card-stats-dark.svg">
