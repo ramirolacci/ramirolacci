@@ -33,15 +33,11 @@
   <img src="https://img.shields.io/github/followers/ramirolacci?style=for-the-badge&logo=github&color=24292e" alt="GitHub followers">
 </a>
 
-<br><br>
-
-<img src="https://komarev.com/ghpvc/?username=ramirolacci&style=flat&color=38B2AC&label=profile+views" alt="profile views">
-
 </div>
 
 ---
 
-## 👨‍💻 About Me
+## {About Me}
 
 Hi, I'm **Ramiro Lacci**, Full-Stack Developer & Digital Solutions Specialist, based in **Buenos Aires, Argentina** 🇦🇷.
 
@@ -61,7 +57,7 @@ I am the founder of **[WaveFrame Studio](https://waveframe.com.ar/)**, where I c
 
 ## 🚀 Technologies and Tools
 
-<img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,nodejs,tailwind,python,ruby,php,mysql,supabase,html,css,git,github,vscode&perline=8" alt="tech stack">
+<img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,nodejs,tailwind,python,ruby,rails,php,mysql,supabase,html,css,git,github,n8n,jira,slack,antigravity,netlify,hostinger,vscode&perline=8" alt="tech stack">
 
 <br><br>
 
