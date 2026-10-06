@@ -57,7 +57,7 @@ I am the founder of **[WaveFrame Studio](https://waveframe.com.ar/)**, where I c
 
 ## 🚀 Technologies and Tools
 
-<img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,nodejs,tailwind,python,django,ruby,rails,postgresql,supabase,html,css,git,github,vscode&perline=8" alt="tech stack">
+<img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,nodejs,tailwind,python,django,ruby,rails,postgresql,supabase,html,css,git,github&perline=8" alt="tech stack">
 
 </div>
 
@@ -103,6 +103,10 @@ I am the founder of **[WaveFrame Studio](https://waveframe.com.ar/)**, where I c
   <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg">
   <img src="assets/card-stats-dark.svg" width="480" alt="GitHub statistics">
 </picture>
+
+<br><br>
+
+<img src="assets/metrics.languages.svg" width="480" alt="Most used languages">
 
 </div>
 
