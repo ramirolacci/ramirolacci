@@ -104,7 +104,7 @@ I am the founder of **[WaveFrame Studio](https://waveframe.com.ar/)**, where I c
   <img src="assets/card-stats-dark.svg" width="480" alt="GitHub statistics">
 </picture>
 
-<br><br>
+<br>
 
 <img src="assets/metrics.languages.svg" width="480" alt="Most used languages">
 
