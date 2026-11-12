@@ -81,23 +81,34 @@ def make_logos() -> dict[str, Image.Image]:
     size = 400
     logos: dict[str, Image.Image] = {}
 
-    # Rust-inspired gear: twelve teeth, heavy annulus, and hub cutout.
-    rust = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    d = ImageDraw.Draw(rust)
-    center = np.array([200.0, 200.0])
-    outer: list[tuple[float, float]] = []
-    for tooth in range(12):
-        base = tooth * math.tau / 12
-        for offset, radius in [
-            (-0.42, 150), (-0.30, 178), (0.30, 178), (0.42, 150)
-        ]:
-            a = base + offset * math.tau / 12
-            outer.append(tuple(center + radius * np.array([math.cos(a), math.sin(a)])))
-    d.polygon(outer, fill="black")
-    d.ellipse((70, 70, 330, 330), fill="black")
-    d.ellipse((128, 128, 272, 272), fill=(0, 0, 0, 0))
-    d.ellipse((174, 174, 226, 226), fill="black")
-    logos["rust"] = rust
+    # 3D wireframe cube mark (WaveFrame / Three.js).
+    cube = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    d = ImageDraw.Draw(cube)
+    cx, cy = size / 2.0, size / 2.0
+
+    vertices = np.array([
+        [-1, -1, -1], [1, -1, -1], [1, 1, -1], [-1, 1, -1],
+        [-1, -1,  1], [1, -1,  1], [1, 1,  1], [-1, 1,  1],
+    ], dtype=float)
+
+    yaw, pitch = math.radians(32), math.radians(22)
+    Ry = np.array([[math.cos(yaw), 0, math.sin(yaw)], [0, 1, 0], [-math.sin(yaw), 0, math.cos(yaw)]])
+    Rx = np.array([[1, 0, 0], [0, math.cos(pitch), -math.sin(pitch)], [0, math.sin(pitch), math.cos(pitch)]])
+    rot_v = (vertices @ (Rx @ Ry).T) * 105.0
+    pts2d = [(cx + v[0], cy - v[1]) for v in rot_v]
+
+    edges = [
+        (0, 1), (1, 2), (2, 3), (3, 0),
+        (4, 5), (5, 6), (6, 7), (7, 4),
+        (0, 4), (1, 5), (2, 6), (3, 7),
+    ]
+    stroke = 20
+    node_r = 13
+    for i, j in edges:
+        d.line([pts2d[i], pts2d[j]], fill="black", width=stroke, joint="curve")
+    for pt in pts2d:
+        d.ellipse((pt[0] - node_r, pt[1] - node_r, pt[0] + node_r, pt[1] + node_r), fill="black")
+    logos["cube"] = cube
 
     # </> mark built from broad, rounded strokes.
     code = Image.new("RGBA", (size, size), (0, 0, 0, 0))
@@ -308,8 +319,8 @@ def render_svg(
     t = THEMES[theme_name]
     n = min(TRAVELLER_COUNT, len(portrait))
     source = portrait[rng.choice(len(portrait), n, replace=False)]
-    rust = transport(source, logo_points["rust"][:n])
-    code = transport(rust, logo_points["code"][:n])
+    cube = transport(source, logo_points["cube"][:n])
+    code = transport(cube, logo_points["code"][:n])
     react = transport(code, logo_points["react"][:n])
 
     # Explicit uneven phase boundaries: 3.0 portrait, 2.0 per logo,
@@ -318,7 +329,7 @@ def render_svg(
     key_times = ";".join(num(v / LOOP_SECONDS) for v in times)
     # Returning each traveller to its exact starting portrait coordinate keeps
     # the repeat boundary seamless. All logo-to-logo morphs use optimal transport.
-    frames = [source, source, rust, rust, code, code, react, react, source]
+    frames = [source, source, cube, cube, code, code, react, react, source]
     opacity_values = "0;0;1;1;1;1;1;1;0"
 
     parts: list[str] = [
@@ -327,7 +338,7 @@ def render_svg(
         'aria-labelledby="title desc">',
         "<title id=\"title\">Ramiro's live system profile</title>",
         '<desc id="desc">Animated terminal profile with a dithered portrait and '
-        "Rust, code, and React silhouettes.</desc>",
+        "3D wireframe cube, code, and React silhouettes.</desc>",
         "<defs>",
         '<filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">'
         f'<feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="{t["shadow"]}" '
@@ -365,8 +376,8 @@ def render_svg(
         '<g opacity="1">',
     ]
 
-    # Dense portrait drift: 94 independently noisy bands moving toward Rust's centroid.
-    rust_centroid = rust.mean(axis=0)
+    # Dense portrait drift: 94 independently noisy bands moving toward cube's centroid.
+    cube_centroid = cube.mean(axis=0)
     band_ids = rng.integers(0, 94, size=len(portrait))
     noise = rng.normal(0, 4, size=(94, 2))
     for band in range(94):
@@ -374,7 +385,7 @@ def render_svg(
         if not len(pts):
             continue
         centroid = pts.mean(axis=0)
-        delta = (rust_centroid - centroid) * 0.18 + noise[band]
+        delta = (cube_centroid - centroid) * 0.18 + noise[band]
         d = point_path(pts)
         parts.append(
             f'<path d="{d}" fill="none" stroke="{t["portrait"]}" stroke-width="1" '

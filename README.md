@@ -19,16 +19,16 @@
 <!-- SOCIALS & BADGES -->
 <a href="https://waveframe.com.ar/" target="_blank">
   <img src="https://img.shields.io/badge/WaveFrame_Studio-0d1117?style=for-the-badge&logo=safari&logoColor=38B2AC" alt="WaveFrame Studio">
-</a>&nbsp;
+</a>
 <a href="mailto:ramiroalejandrolacci19@gmail.com" target="_blank">
   <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
-</a>&nbsp;
+</a>
 <a href="https://wa.link/a1bh6y" target="_blank">
   <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
-</a>&nbsp;
+</a>
 <a href="https://www.linkedin.com/in/ramiro-lacci/" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-</a>&nbsp;
+</a>
 <a href="https://github.com/ramirolacci" target="_blank">
   <img src="https://img.shields.io/github/followers/ramirolacci?style=for-the-badge&logo=github&color=24292e" alt="GitHub followers">
 </a>
