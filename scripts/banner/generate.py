@@ -81,34 +81,23 @@ def make_logos() -> dict[str, Image.Image]:
     size = 400
     logos: dict[str, Image.Image] = {}
 
-    # 3D wireframe cube mark (WaveFrame / Three.js).
-    cube = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    d = ImageDraw.Draw(cube)
-    cx, cy = size / 2.0, size / 2.0
-
-    vertices = np.array([
-        [-1, -1, -1], [1, -1, -1], [1, 1, -1], [-1, 1, -1],
-        [-1, -1,  1], [1, -1,  1], [1, 1,  1], [-1, 1,  1],
-    ], dtype=float)
-
-    yaw, pitch = math.radians(32), math.radians(22)
-    Ry = np.array([[math.cos(yaw), 0, math.sin(yaw)], [0, 1, 0], [-math.sin(yaw), 0, math.cos(yaw)]])
-    Rx = np.array([[1, 0, 0], [0, math.cos(pitch), -math.sin(pitch)], [0, math.sin(pitch), math.cos(pitch)]])
-    rot_v = (vertices @ (Rx @ Ry).T) * 105.0
-    pts2d = [(cx + v[0], cy - v[1]) for v in rot_v]
-
-    edges = [
-        (0, 1), (1, 2), (2, 3), (3, 0),
-        (4, 5), (5, 6), (6, 7), (7, 4),
-        (0, 4), (1, 5), (2, 6), (3, 7),
-    ]
-    stroke = 20
-    node_r = 13
-    for i, j in edges:
-        d.line([pts2d[i], pts2d[j]], fill="black", width=stroke, joint="curve")
-    for pt in pts2d:
-        d.ellipse((pt[0] - node_r, pt[1] - node_r, pt[0] + node_r, pt[1] + node_r), fill="black")
-    logos["cube"] = cube
+    # WaveFrame Studio logo mark (from assets/source/waveframe.png).
+    wf_src = ROOT / "assets/source/waveframe.png"
+    if wf_src.exists():
+        im = Image.open(wf_src).convert("RGBA")
+        bbox = im.getbbox()
+        if bbox:
+            cropped = im.crop(bbox)
+            target_w = 360
+            target_h = int(cropped.height * (target_w / cropped.width))
+            resized = cropped.resize((target_w, target_h), Image.Resampling.LANCZOS)
+            waveframe = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+            offset_x = (size - target_w) // 2
+            offset_y = (size - target_h) // 2
+            alpha = resized.getchannel("A")
+            black_fill = Image.new("RGBA", resized.size, (0, 0, 0, 255))
+            waveframe.paste(black_fill, (offset_x, offset_y), alpha)
+            logos["waveframe"] = waveframe
 
     # </> mark built from broad, rounded strokes.
     code = Image.new("RGBA", (size, size), (0, 0, 0, 0))
@@ -319,8 +308,8 @@ def render_svg(
     t = THEMES[theme_name]
     n = min(TRAVELLER_COUNT, len(portrait))
     source = portrait[rng.choice(len(portrait), n, replace=False)]
-    cube = transport(source, logo_points["cube"][:n])
-    code = transport(cube, logo_points["code"][:n])
+    waveframe = transport(source, logo_points["waveframe"][:n])
+    code = transport(waveframe, logo_points["code"][:n])
     react = transport(code, logo_points["react"][:n])
 
     # Explicit uneven phase boundaries: 3.0 portrait, 2.0 per logo,
@@ -329,7 +318,7 @@ def render_svg(
     key_times = ";".join(num(v / LOOP_SECONDS) for v in times)
     # Returning each traveller to its exact starting portrait coordinate keeps
     # the repeat boundary seamless. All logo-to-logo morphs use optimal transport.
-    frames = [source, source, cube, cube, code, code, react, react, source]
+    frames = [source, source, waveframe, waveframe, code, code, react, react, source]
     opacity_values = "0;0;1;1;1;1;1;1;0"
 
     parts: list[str] = [
@@ -338,7 +327,7 @@ def render_svg(
         'aria-labelledby="title desc">',
         "<title id=\"title\">Ramiro's live system profile</title>",
         '<desc id="desc">Animated terminal profile with a dithered portrait and '
-        "3D wireframe cube, code, and React silhouettes.</desc>",
+        "WaveFrame Studio, code, and React silhouettes.</desc>",
         "<defs>",
         '<filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">'
         f'<feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="{t["shadow"]}" '
@@ -376,8 +365,8 @@ def render_svg(
         '<g opacity="1">',
     ]
 
-    # Dense portrait drift: 94 independently noisy bands moving toward cube's centroid.
-    cube_centroid = cube.mean(axis=0)
+    # Dense portrait drift: 94 independently noisy bands moving toward waveframe's centroid.
+    waveframe_centroid = waveframe.mean(axis=0)
     band_ids = rng.integers(0, 94, size=len(portrait))
     noise = rng.normal(0, 4, size=(94, 2))
     for band in range(94):
@@ -385,7 +374,7 @@ def render_svg(
         if not len(pts):
             continue
         centroid = pts.mean(axis=0)
-        delta = (cube_centroid - centroid) * 0.18 + noise[band]
+        delta = (waveframe_centroid - centroid) * 0.18 + noise[band]
         d = point_path(pts)
         parts.append(
             f'<path d="{d}" fill="none" stroke="{t["portrait"]}" stroke-width="1" '
